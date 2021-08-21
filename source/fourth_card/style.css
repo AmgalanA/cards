@@ -1,0 +1,331 @@
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+.wrapper .column {
+  width: 26.3888888889%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 150px 40px;
+}
+.wrapper .column:last-child {
+  width: 29.6296296296%;
+}
+.wrapper .card {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 20px 18px 20px;
+  margin: 0px 0px 40px 0px;
+}
+.wrapper .card fieldset {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+.wrapper .card fieldset label {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #1F2041;
+}
+.wrapper .card fieldset .content_container {
+  float: left;
+  width: 46%;
+}
+.wrapper .card fieldset .content_container:nth-child(2) {
+  float: right;
+}
+.wrapper .card fieldset .content_container .select_container {
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .card fieldset .content_container .select_container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: uppercase;
+  width: 100%;
+  margin: 13px 0px 13px 10px;
+}
+.wrapper .card fieldset .content_container .select_container img {
+  margin-left: auto;
+  margin-right: 8px;
+}
+.wrapper .card fieldset .content_container.guests {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.wrapper .card fieldset .content_container.guests select {
+  text-transform: none;
+}
+.wrapper .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+.wrapper .card form label {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+.wrapper .card .button_container {
+  margin-top: 20px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .card .button_container input {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  margin: 14.5px 0px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+.wrapper .card .button_container img {
+  float: left;
+  margin: 0px 10px 0px auto;
+}
+.wrapper .card span {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.card-registration form span {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+.card-registration form label {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card-registration form input {
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: rgba(31, 32, 65, 0.25);
+  margin: 10px 0px;
+}
+.card-registration form input.birthday {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.card-registration form .radio_buttons_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.card-registration form .radio_buttons_container .label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.card-registration form .radio_buttons_container .input {
+  margin: auto 0px;
+  cursor: pointer;
+}
+.card-registration form .radio_buttons_container .radio {
+  position: relative;
+}
+.card-registration form .radio_buttons_container .radio:nth-child(2) {
+  margin-left: 15px;
+}
+.card-registration form .radio_buttons_container .radio .radio__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  vertical-align: middle;
+}
+.card-registration form .radio_buttons_container .radio .radio__input:checked + .radio__label:before {
+  background: #fff;
+}
+.card-registration form .radio_buttons_container .radio .radio__input:checked + .radio__label:after {
+  opacity: 1;
+}
+.card-registration form .radio_buttons_container .radio .radio__label {
+  padding-left: 28px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(31, 32, 65, 0.75);
+}
+.card-registration form .radio_buttons_container .radio .radio__label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8BA4F9;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.card-registration form .radio_buttons_container .radio .radio__label::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+.card-registration form .email {
+  margin-bottom: 0px;
+}
+.card-registration form .switch {
+  position: relative;
+}
+.card-registration form .switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  border: none;
+}
+.card-registration form .switch input:checked + label:after {
+  left: 23.5px;
+}
+.card-registration form .switch label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+  text-transform: none;
+  vertical-align: middle;
+  cursor: pointer;
+  padding-left: 50px;
+}
+.card-registration form .switch label::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.card-registration form .switch label::after {
+  content: "";
+  cursor: pointer;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  opacity: 1;
+  border: none;
+  position: absolute;
+  top: 3.6px;
+  left: 3px;
+  z-index: 2;
+}
+.card-registration form .button_container input {
+  cursor: pointer;
+}
+.card-registration footer {
+  margin: 10px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.card-registration footer .footer-account {
+  margin: auto auto auto 0px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
+}
+.card-registration footer input {
+  margin: auto 0px auto auto;
+  border-radius: 22px;
+  width: 99px;
+  text-align: center;
+  padding: 0px 10px;
+  border: 3px solid #BC9CFF;
+  font-size: 12px;
+  line-height: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #BC9CFF;
+  background: none;
+}

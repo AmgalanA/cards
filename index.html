@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="source/second_card/style.css">
+    <link rel="stylesheet" href="source/third_card/style.css">
+    <link rel="stylesheet" href="source/fourth_card/style.css">
+    <link rel="stylesheet" href="source/fivth_card/style.css">
+    <link rel="stylesheet" href="source/sixth_card/style.css">
+
+    <link rel="stylesheet" href="datepicker/css/datepicker.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="column">
+            <div class="card">
+                <span>Найдём номера под ваши пожелания</span>
+            
+                <form action="">
+                    <fieldset>
+                        <div class="content_container ">
+                            <label for="arrival_date">Прибытие</label>
+                            <div class="select_container">
+                                <select name="arrival_date" id="arrival_date">
+                                    <option value="">дд.мм.гггг</option>
+                                </select>
+                                <img src="images/expand_more.svg" alt="arrow down">
+    
+                            </div>
+                        </div>
+                        
+                        <div class="content_container">
+                            <label for="leaving_date">Выезд</label>
+                            <div class="select_container">
+                                <select name="leaving_date" id="leaving_date">
+                                    <option value="">дд.мм.гггг</option>
+                                </select>
+                                <img src="images/expand_more.svg" alt="arrow down">
+                            </div>
+                        </div>
+    
+                        <div class="content_container guests">
+                            <label for="">Гости</label>
+                            <div class="select_container">
+                                <select class="guests" name="guests" id="guests">
+                                    <option value="">Сколько гостей</option>
+                                </select>
+                                <img src="images/expand_more.svg" alt="arrow down">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="button_container">
+                        <input type="submit" value="подобрать номер">
+                        <img src="images/arrow_forward_white.svg" alt="arrow forward">
+                    </div>
+                </form>
+            </div>
+            <div class="card card-registration">
+                <form action="">
+                    <span>Регистрация аккаунта</span>
+                    <input class="name" type="text" name="name" id="name" placeholder="Имя">
+                    <input class="name" type="text" name="surname" id="surname" placeholder="Фамилия">
+                    <div class="radio_buttons_container">
+                        <div class="radio">
+                            <input class="radio__input" type="radio" name="male" id="male" checked>
+                            <label class="radio__label" for="male">Мужчина</label>
+                        </div>
+                        
+                        <div class="radio">
+                            <input class="radio__input" type="radio" name="male" id="female">
+                            <label class="radio__label" for="female">Женщины</label>
+                        </div>
+                        
+                    </div>
+    
+                    <label for="birthday">Дата рождения</label>
+                    <input class="birthday" type="text" name="birthday" id="birthday" placeholder="дд.мм.гггг">
+                    <label for="email">данные для входа в сервис</label>
+                    <input class="email" type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Пароль">
+    
+                    <div class="switch">
+                        <input id="switch-checkbox" type="checkbox">
+                        <label for="switch-checkbox">Получать спецпредложения</label>
+                    </div>
+    
+                    <div class="button_container">
+                        <input type="submit" value="перейти к оплате">
+                        <img src="images/arrow_forward_white.svg" alt="arrow forward">
+                    </div>
+    
+                    
+                </form>
+                <footer>
+                    <label class="footer-account">Уже есть аккаунт на Toxin</label>
+                    <input type="submit" value="Войти">
+                </footer>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="card card-services">
+                <header>
+                    <div class="lux">
+                        <span class="lux-sign">№</span>
+                        <span class="lux-number">888</span>
+                        <span class="lux-text">люкс</span> 
+                    </div>
+                    <div class="price_container">
+                        <span class="services-price">9990Р</span>
+                        <span class="services-text">в сутки</span> 
+                    </div>
+                </header>
+                
+                <fieldset>
+                    <div class="content_container ">
+                        <label for="arrival_date">Прибытие</label>
+                        <div class="select_container">
+                            <select name="arrival_date" id="arrival_date">
+                                <option value="">19.08.2019</option>
+                            </select>
+                            <img src="images/expand_more.svg" alt="arrow down">
+                        </div>
+                    </div>
+                    
+                    <div class="content_container">
+                        <label for="leaving_date">Выезд</label>
+                        <div class="select_container">
+                            <select name="leaving_date" id="leaving_date">
+                                <option value="">23.08.2019</option>
+                            </select>
+                            <img src="images/expand_more.svg" alt="arrow down">
+                        </div>
+                    </div>
+                    <div class="content_container guests rooms">
+                        <label for="">Гости</label>
+                        <div class="select_container">
+                            <select class="guests" name="guests" id="guests">
+                                <option value="">3 гостя</option>
+                            </select>
+                            <img src="images/expand_more.svg" alt="arrow down">
+                        </div>
+                    </div>
+    
+                    <div class="price_container ">
+                        <div class="price">
+                            <span class="price-amount">9990₽ х 4 суток</span>
+                            <span>39 960₽</span>   
+                        </div>
+                        <div class="price discount">
+                            <span>Сбор за услуги: скидка 2 179₽</span>
+                            <img src="images/Group 2.svg" alt="Group 2">
+                            <span>0₽</span>
+                        </div>
+                        <div class="price services">
+                            <span>Сбор за дополнительные услуги</span>
+                            <img src="images/Group 2.svg" alt="Group 2">
+                            <span class="thr">300₽</span>
+                        </div>
+                    </div>
+    
+                    <div class="total">
+                        <span>Итого</span>
+                        <span>38 081₽</span>
+                    </div>
+                </fieldset>    
+                <div class="button_container">
+                    <input type="submit" value="забронировать">
+                    <img src="images/arrow_forward_white.svg" alt="arrow forward">
+                </div>
+            </div>
+
+            <div class="card card-login">
+                <span>Войти</span>
+    
+                <input class="email" type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Пароль">
+            
+                <footer>
+                    <label class="footer-account">Нет аккаунта на Toxin?</label>
+                    <input type="submit" value="Войти">
+                </footer>
+            </div>
+            
+        </div>
+
+        <div class="column">
+            <div class="card card-calendar">
+            <div class="calendar-container">
+                <div id="calendar"></div>
+                <footer class="calendar__footer">
+                    <button>очистить</button>
+                    <button>применить</button>
+                </footer>
+            </div>
+
+            
+        </div>     
+        <div class="card-room">
+            <div class="image_container">
+                <img src="images/image.svg" alt="room image">
+            </div>
+
+            <div class="content_container">
+                <header>
+                    <div class="lux">
+                        <span class="lux-sign">№</span>
+                        <span class="lux-number">888</span>
+                        <span class="lux-text">люкс</span> 
+                    </div>
+                    <div class="price_container">
+                        <span class="services-price">9990Р</span>
+                        <span class="services-text">в сутки</span> 
+                    </div>
+                </header>
+                <main class="main">
+                    <div class="rating">
+                        <div class="items">
+                            <input checked id="star_5" class="item" name="star" type="radio" value="5">
+                            <label for="star_5" class="label"></label>
+                            <input  id="star_4" class="item" name="star" type="radio" value="4">
+                            <label for="star_4" class="label"></label>
+                            <input  id="star_3" class="item" name="star" type="radio" value="3">
+                            <label for="star_3" class="label"></label>
+                            <input  id="star_2" class="item" name="star" type="radio" value="2">
+                            <label for="star_2" class="label"></label>
+                            <input  id="star_1" class="item" name="star" type="radio" value="1">
+                            <label for="star_1" class="label"></label>
+                        </div>
+                    </div>
+                    <div class="comments_container">
+                        <span class="comments__number">145</span>
+                        <span class="comments__text">Отзывов</span> 
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div class="card-room">
+            <div class="image_container">
+                <img src="images/image2.svg" alt="room image">
+            </div>
+
+            <div class="content_container">
+                <header>
+                    <div class="lux">
+                        <span class="lux-sign">№</span>
+                        <span class="lux-number">840</span>
+                    </div>
+                    <div class="price_container">
+                        <span class="services-price">9990Р</span>
+                        <span class="services-text">в сутки</span> 
+                    </div>  
+                </header>
+                <main class="main">
+                    <div class="rating">
+                        <div class="items">
+                            <input id="star_5" class="item" name="star2" type="radio" value="5">
+                            <label for="star_5" class="label"></label>
+                            <input checked id="star_4" class="item" name="star2" type="radio" value="4">
+                            <label for="star_4" class="label"></label>
+                            <input id="star_3" class="item" name="star2" type="radio" value="3">
+                            <label for="star_3" class="label"></label>
+                            <input id="star_2" class="item" name="star2" type="radio" value="2">
+                            <label for="star_2" class="label"></label>
+                            <input id="star_1" class="item" name="star2" type="radio" value="1">
+                            <label for="star_1" class="label"></label>
+                        </div>
+                    </div>
+                    <div class="comments_container">
+                        <span class="comments__number">65</span>
+                        <span class="comments__text">Отзывов</span> 
+                    </div>
+                </main>
+            </div>
+        </div>   
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="datepicker/js/datepicker.js"></script>
+    <script>
+        $(function() {
+            $('#calendar').datepicker({
+                multipleDates:2,
+                inline: true,
+                position:'bottom left',
+                
+            });
+        })
+    </script>
+
+</body>
+</html>

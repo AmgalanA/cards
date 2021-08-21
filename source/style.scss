@@ -1,0 +1,141 @@
+
+@mixin fontstyles($size, $line_height, $font_weight){
+    font-size: $size;
+    line-height: $line_height;
+    font-weight: $font_weight;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    @include fontstyles(14px, 18px, 400);
+}
+
+.wrapper {
+    min-height: 100%;
+    max-width: 1440px;
+    margin:0px auto;
+
+    .column {
+        width:380px / 1440px * 100%;
+        display:flex;
+        float:left;
+        flex-direction: column;
+        margin: 150px 40px;
+
+        &:last-child {
+            width:320px / 1080px * 100%;
+        }
+    }
+
+    
+    .card {
+        width:100%;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        padding:30px 20px 18px 20px;
+        margin:0px 0px 40px 0px;
+
+
+        fieldset {
+            border:none;
+            padding:0px;
+            margin:0px;
+            width:100%; 
+
+            label {
+                @include fontstyles(12px, 15px, bold);
+                color: #1F2041;
+            }
+
+            .content_container {
+                float:left;
+                width:46%;
+
+                &:nth-child(2){
+                    float:right;
+                }
+
+                .select_container {
+                    background: #FFFFFF;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    text-align: center;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    display:flex;
+
+                    select {
+                        appearance:none;
+                        border:none;
+                        outline:none;
+
+                        @include fontstyles(14px, 18px, 400);
+                        color: rgba(31, 32, 65, 0.75);
+                        text-transform: uppercase;
+                        // width:103px / 150px * 100%;
+                        width: 100%;
+                        margin:13px 0px 13px 10px;
+                    }
+
+                    img {
+                        margin-left:auto;
+                        margin-right:8px;
+                    }
+                }
+
+                &.guests {
+                    width: 100%;
+                    margin-top: 15px;
+                    @include fontstyles(14px, 18px, 400);
+                    select {
+                        text-transform:none;
+                    }
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+
+            label {
+                @include fontstyles(12px, 15px, 700)
+            }
+            
+        }
+
+        .button_container {
+            margin-top:20px;
+            width:100%;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            display:flex;
+
+            input {
+                cursor:pointer;
+                background:none;
+                border:none;
+                width:100%;
+                margin:14.5px 0px;
+                @include fontstyles(12px, 15px, 700);
+                text-transform: uppercase;
+                color: #FFFFFF;
+                vertical-align: middle;
+            }
+
+            img {
+                float:left;
+                margin:0px 10px 0px auto;
+            }
+        }
+
+        span {
+            @include fontstyles(24px, 29px, 700)
+        }
+    }
+}
+

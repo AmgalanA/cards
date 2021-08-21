@@ -1,0 +1,34 @@
+@import "../style.scss";
+
+.card-calendar {
+   
+
+    .calendar-container {
+        margin:0px auto;
+        #calendar {
+            margin:0 0 20px 0px;
+            width:100%;
+        }
+    }
+}
+
+.calendar__footer {
+        padding:0 14px;
+        button {
+            cursor:pointer;
+            @include fontstyles(12px, 15px, 700);
+            text-transform: uppercase;
+            color: #BC9CFF;
+            appearance: none;
+            border:none ;
+            background:none;
+
+            &:first-child {
+                float:left;
+            }
+
+            &:last-child {
+                float:right;
+            }
+        }
+    }
